@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Raleway";
+    padding: 5em 0 0;
+    background: #FEFAE0;
+}
+/*nav bar*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #E9EDC9;
+    padding: 10px;
+    
+    
+}
+.logo{
+    display:flex;
+    align-items: center;
+    
+}
+.logo img {
+    height:6em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all(0.3s);
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+   
+}
+.nav-enlace{
+    text-decoration: none;
+    color:rgb(254,250,224);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 0.5em;
+}
+.nav-enlace:hover{
+    background:#CCD5AE;
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+.nav-menu-item{
+    margin-right: 40px;
+    list-style: none;
+    text-transform: uppercase;
+    width: max-content;
+    transition: all(0.3s);
+}
+
+.nav-menu-item:hover{
+    transform: scale(1.1);
+}
+.toggle{
+    background: none;
+    border: none;
+    display: none;
+}
+
+@media screen and (max-width: 52em){
+    body{
+        padding-top: 4em;
+    }
+    .header{
+        height: 4em;
+    }
+    .logo img{
+        height: 4em;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        background-color: #CCD5AE;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0px;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        margin-top: 10px;
+        margin-bottom: 10px;  
+    }
+    .nav-enlace:hover{
+        background:none;
+        transition: none;
+        color:#D4A373;
+        
+    }
+    .nav-menu-item:hover{
+        transform: none;
+        
+    }
+    .toggle{
+        display: block;
+        padding-left: 16em;
+    }
+    .nav-menu_visible{
+        left: 0%;
+    }
+
+/*fin media query*/
+}
