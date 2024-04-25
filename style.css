@@ -72,6 +72,7 @@ header {
     border: none;
     display: none;
 }
+/*media query*/
 
 @media screen and (max-width: 52em){
     body{

@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: "Raleway";
     padding: 5em 0 0;
     background: #FEFAE0;
 }
+
 /*nav bar*/
 header {
     display: flex;
@@ -23,17 +25,20 @@ header {
     
     
 }
+
 .logo{
     display:flex;
     align-items: center;
     
 }
+
 .logo img {
     height:6em;
     margin-right: 1em;
     cursor: pointer;
     transition: all(0.3s);
 }
+
 .logo img:hover{
     transform: scale(1.2);
 }
@@ -50,12 +55,14 @@ header {
     font-weight: bold;
     padding: 1em 0.5em;
 }
+
 .nav-enlace:hover{
     background:#CCD5AE;
     border-radius: 30px;
     transition: 0.5s;
 
 }
+
 .nav-menu-item{
     margin-right: 40px;
     list-style: none;
@@ -73,13 +80,107 @@ header {
     display: none;
 }
 
+/**formulario*/
+
+h2{
+	font-size: 2em;
+    color:#D4A373;
+	text-align: center;
+	margin: 0;
+
+}
+
+#container{
+	background-color:#CCD5AE;
+	width: 35%;
+	padding: 2em;
+	margin: 6em auto;
+	border: 1px solid #D4A373;
+    border-radius: 2em;
+}
+
+ form input{
+	width: 100%;
+	height: 3em;
+    padding: 1em;
+    margin:0.5em;
+	border-radius: 10px;
+ }
+
+ #enviar{
+	width: 40%;
+	height: 4em;
+	text-align: center;
+	color: #FEFAE0;
+	background-color:#D4A373;
+	border-radius: 30px;
+ }
+
+/*mapa y redes*/
+
+.ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #D4A373;
+    border-radius: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+.contactenos{
+    font-size: 2em;
+    color:#D4A373;
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+.contacto{
+    width: 30% ;
+    padding-top: 6em;
+    padding-left: 6em;
+    
+}
+.contacto1{
+    padding-bottom: 0.5em;
+}
+
+.seguinos{
+    font-size: 2em;
+    color:#D4A373;
+	text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.redes{
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+}
+.contacto2{
+    padding-right: 1em;
+
+}
+ .mapa{
+    width: 60% ;
+    padding-top: 2em;
+    padding-bottom: 2em;
+ }
+
+ 
+
+/*media query*/
+
 @media screen and (max-width: 52em){
+
     body{
         padding-top: 4em;
     }
+
     .header{
         height: 4em;
     }
+
     .logo img{
         height: 4em;
     }
@@ -95,10 +196,12 @@ header {
         left: 100%;
         transition: left 0.3s;
     }
+
     .nav-menu-item{
         margin-top: 10px;
         margin-bottom: 10px;  
     }
+
     .nav-enlace:hover{
         background:none;
         transition: none;
@@ -106,16 +209,33 @@ header {
         
     }
     .nav-menu-item:hover{
-        transform: none;
-        
+        transform: none;   
     }
+
     .toggle{
         display: block;
         padding-left: 10em;
     }
+
     .nav-menu_visible{
         left: 0%;
     }
 
-/*fin media query*/
+    #container{
+        width: 80% !important;
+
+    }
+
+    .ubicacion{
+        display:block;
+    }
+    .mapa{
+        width:120%;
+        padding-left: 1em;
+    }
+
 }
+/*fin media query*/
+
+
+

@@ -29,6 +29,71 @@
        </nav>
    </header>
    <main>
+    <section>
+        <div id="container">
+            <h2>Formulario de Registro</h2>
+
+                <form id="formulario" >
+                    <input type="text" name="nombre" placeholder="Nombre"required minlength="3" maxlength="15"><br>
+                    <input type="text" name="apellido" placeholder="Apellido" minlength="3" maxlength="20" required><br>
+                    <input type="email" name="correo" placeholder="Coreo Electronico" required><br>
+                    <input type="tel" name="contacto" placeholder="Telefono" required><br>
+                    <input type="number" name="miEdad" placeholder="Edad" min="18" max="105"><br>
+                    <input type="date" name="fecha" placeholder="Fecha de Nacimiento"><br>
+                    <input type="text" name="usuario"placeholder="Nombre de Usuario" pattern="[a-zA-Z0-9]{1,10}" title="Letras y numeros entre 1 y 8 caracteres" required><br>
+                    <input type="password" name="pass" placeholder="Contraseña"minlength="8"required ><br>
+                    <input type="submit" id="enviar"  value="Registrarse" onclick="validacion()" >
+
+                </form>
+        </div>
+    </section>
+    <section class="ubicacion">
+        
+        <div class="contacto">
+            <h2 class="contactenos" > Contactanos</h2>
+            <a href="mailto:info@aventurasenargentina.com">
+                <figure class="contacto1">
+                    <img  src="./imagenes/email (2).png" alt="correo electronico">
+                    <p>info@aventurasenargentina.com</p>
+                </figure>
+            </a>
+            <a  href="tel:080022284253">
+                <figure class="contacto1">  
+                    <img src="./imagenes/llamada (1).png " alt="telefono de linea">
+                    <p>0800222VIAJE</p>
+                </figure>
+            </a>
+            <a href="tel:1512345678">
+                <figure class="contacto1">
+                    <img  src="./imagenes/whatsapp.png" alt="whatsapp">
+                    <p> 1512345678</p>
+                </figure>
+            </a>
+            <h2 class="seguinos"> Seguinos</h2>
+            <div class="redes" >
+                <a href="https://www.facebook.com/codoacodooficial/">
+                    <figure class="contacto2">
+                        <img  src="./imagenes/facebook.png" alt="facebook">
+                    </figure>
+                </a>
+                <a  href="https://www.instagram.com/programacodoacodo/?hl=es">
+                    <figure class="contacto2">
+                        <img src="./imagenes/instagram (2).png" alt="instagram">
+                    </figure>
+                </a> 
+                <a href="https://www.youtube.com/channel/UCzelX_Pd_RkibwOMrYudIrQ/videos">   
+                    <figure class="contacto2">
+                        <img src="./imagenes/youtube.png" alt="youtube">
+                    </figure>
+                </a>
+            </div>
+            
+            
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.888688391981!2d-58.52598332339029!3d-34.657513960342875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8589306e181%3A0x327f01dda1e455f3!2sAv.%20Gral.%20Paz%2012206%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714076619514!5m2!1ses!2sar" width="80%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
    </main>
    <footer>
