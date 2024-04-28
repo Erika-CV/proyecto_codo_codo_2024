@@ -6,7 +6,7 @@
 body{
     font-family: "Raleway";
     padding: 5em 0 0;
-    background: #FEFAE0;
+    background-color: #ffffff;
 }
 /*nav bar*/
 header {
@@ -15,12 +15,12 @@ header {
     align-items: center;
     height: 6em;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    background: #E9EDC9;
+    background: #606c38;
     padding: 10px;
-    
+    box-shadow: 0px 5px 5px 0px #818181;
     
 }
 .logo{
@@ -49,6 +49,7 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     padding: 1em 0.5em;
+    
 }
 .nav-enlace:hover{
     background:#CCD5AE;
@@ -72,6 +73,112 @@ header {
     border: none;
     display: none;
 }
+
+.imgcarousel{
+    height: 600px;
+}
+
+.espacio{
+    height: 17px;
+}
+
+.textoEig{
+    width: 80%;
+    display: flex;
+    margin-left: 17vh;
+
+}
+
+.texto{
+    text-align: center;
+    display: block;
+    margin-inline: 25vh;
+
+}
+
+.img-texto{
+    width: 350px;
+    border-radius: 15%;
+    margin-left: 2vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+.textoGrande{
+    font-size: 40px; 
+    color:#606c38;
+    text-align: center;
+    filter: drop-shadow(-4px 4px 03px #a7ac85);
+}
+
+.texto-card{
+ font-size: 25px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ text-align: center;
+ color: #586822;
+ 
+}
+
+.cardsFila{
+    display: flex;
+    justify-content: center;
+}
+
+.logotipo{
+filter: drop-shadow( 3px  5px  4px #cec742);
+}
+
+.card-img{
+    filter: drop-shadow(02px 06px 4px #000);
+    padding: 10px;
+    border-radius: 55%;
+    
+}
+.card-img:hover {
+    transform: scale(1.05) ;
+    transition: transform 0.5s ;
+    border-radius: 5%;
+}
+
+.card2{
+    background: none;
+    
+}
+
+.pre{
+    margin-top: 5vh;
+    display: inline-flex;
+   color: #CCD5AE;
+   font-size: 20px;
+   font-weight: bold;
+   margin-left: 11vh;
+   margin-right: 5vh;
+
+}
+#footer{
+    background-color: #606c38;
+    display: flex;
+    height: 200px;
+    box-shadow: 0px 0px 5px 3px #818181;
+    font-family: "Raleway";
+}
+
+.whatsapp{
+    position: 1;
+}
+
+
+
+.pre .iconitosF{
+    width: 30px;
+    display: flex;
+    margin-right: 8px;
+    margin-bottom: -55px;
+}
+.iEnLinea{
+display: inline-flex;
+}
+
 /*media query*/
 
 @media screen and (max-width: 52em){
