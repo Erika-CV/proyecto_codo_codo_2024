@@ -15,7 +15,7 @@ header {
     align-items: center;
     height: 6em;
     width: 100%;
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     background: #606c38;
@@ -74,11 +74,10 @@ header {
     border: none;
     display: none;
 }
-
+/*                */
 .imgcarousel{
     height: 600px;
 }
-
 .espacio{
     height: 17px;
 }
@@ -226,7 +225,7 @@ display: inline-flex;
     .nav-enlace:hover{
         background:none;
         transition: none;
-        color:#D4A373;
+        color:#dda15e;
         
     }
     .nav-menu-item:hover{
@@ -243,9 +242,6 @@ display: inline-flex;
 
 /*fin media query*/
 
-#banner{
-    width: 100%;
-}
 
 }
 

@@ -18,8 +18,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #E9EDC9;
+    background: #606c38;
     padding: 10px;
+    box-shadow: 0px 5px 5px 0px;
     
     
 }
@@ -37,6 +38,10 @@ header {
 .logo img:hover{
     transform: scale(1.2);
 }
+
+.logotipo{
+    filter: drop-shadow( 3px  5px  4px #cec742);
+    }
 
 .nav-menu {
     display: flex;
@@ -86,7 +91,7 @@ header {
     
     .nav-menu{
         flex-direction: column;
-        background-color: #CCD5AE;
+        background-color: #ccd5ae;
         position: fixed;
         left: 0;
         top: 60px;
@@ -102,7 +107,7 @@ header {
     .nav-enlace:hover{
         background:none;
         transition: none;
-        color:#D4A373;
+        color:#dda15e;
         
     }
     .nav-menu-item:hover{

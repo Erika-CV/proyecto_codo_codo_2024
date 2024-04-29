@@ -13,13 +13,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5em;
+    height: 6em;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    background: #E9EDC9;
+    background: #606c38;
     padding: 10px;
+    box-shadow: 0px 5px 5px 0px #818181;
     
     
 }
@@ -28,6 +29,7 @@ header {
     align-items: center;
     
 }
+
 .logo img {
     height:6em;
     margin-right: 1em;
@@ -37,6 +39,10 @@ header {
 .logo img:hover{
     transform: scale(1.2);
 }
+
+.logotipo{
+    filter: drop-shadow( 3px  5px  4px #cec742);
+    }
 
 .nav-menu {
     display: flex;
@@ -52,7 +58,7 @@ header {
 }
 .nav-enlace:hover{
     background:#CCD5AE;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: 0.5s;
 
 }
@@ -86,7 +92,7 @@ header {
     
     .nav-menu{
         flex-direction: column;
-        background-color: #CCD5AE;
+        background-color: #ccd5ae;
         position: fixed;
         left: 0;
         top: 60px;
@@ -102,7 +108,7 @@ header {
     .nav-enlace:hover{
         background:none;
         transition: none;
-        color:#D4A373;
+        color:#dda15e;
         
     }
     .nav-menu-item:hover{
@@ -116,21 +122,26 @@ header {
     .nav-menu_visible{
         left: 0%;
     }
+    
    
 }
 /* presentacion*/
+.banner{
+    width: 100%;
+    height:800px;
+}
 
 h1 {
-    font-size: 3em;
-    color: #D4A373;
+    font-size: 4em;
+    color: #606c38;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 h2{
-    font-size: 1.8em;
-    color:#D4A373
+    font-size: 3em;
+    color:#606c38
 }
 
 .empresa{
@@ -158,8 +169,11 @@ span{
     font-style: italic;
 }
 .titulo_secundario{
-    font-size: 3em;
-    color: #D4A373;
+    font-size: 4em;
+    color: #606c38;
     text-align: center;
     padding-top: 1em;
+}
+p{
+    font-size: 1.5em;
 }
