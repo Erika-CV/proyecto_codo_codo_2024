@@ -169,9 +169,11 @@ h2{
     padding-top: 2em;
     padding-bottom: 2em;
  }
-
+ a{
+    text-decoration: none;
+    color:#606c38
+ }
  
-
 /*media query*/
 
 @media screen and (max-width: 52em){
