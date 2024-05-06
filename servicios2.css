@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Raleway";
+    padding: 5em 0 0;
+    background:#FEFAE0;
+}
+/*nav bar*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #E9EDC9;
+    padding: 10px;
+       
+}
+.logo{
+    display:flex;
+    align-items: center;
+    
+}
+.logo img {
+    height:6em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all(0.3s);
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+ 
+}
+.nav-enlace{
+    text-decoration: none;
+    color:hsl(50, 62%, 91%);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 0.5em;
+}
+.nav-enlace:hover{
+    background:#CCD5AE;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.nav-menu-item{
+    margin-right: 40px;
+    list-style: none;
+    text-transform: uppercase;
+    width: max-content;
+    transition: all(0.3s);
+}
+
+.nav-menu-item:hover{
+    transform: scale(1.1);
+}
+.toggle{
+    background: none;
+    border: none;
+    display: none;
+}
+/* Media Query*/
+@media (max-width: 52em){
+    body{
+        padding-top: 4em;
+    }
+    .header{
+        height: 4em;
+    }
+    .logo img{
+        height: 4em;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        background-color:#35420af1;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0px;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        margin-top: 10px;
+        margin-bottom: 10px;  
+    }
+    .nav-enlace:hover{
+        background:none;
+        transition: none;
+        color:#D4A373;
+        
+    }
+    .nav-menu-item:hover{
+        transform: none;
+        
+    }
+    .toggle{
+        display: block;
+        padding-left: 16em;
+    }
+    .nav-menu_visible{
+        left: 0%;
+    }
+ }
+ 
+/* presentacion*/
+
+h1 {
+    font-size: 2em;
+    color: #D4A373;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h2{
+    font-size: 1.8em;
+    color:#D4A373
+}
+
+.empresa{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+}
+span{
+    font-weight: bold;
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+.parrafo{
+    padding-top: 1em;
+}
+
+.presentacion{
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.negrita{
+    font-weight: bold;
+    font-size: 1.2em;
+    font-style: italic;
+}
+.titulo_secundario{
+    font-size: 3em;
+    color: #D4A373;
+    text-align: center;
+    padding-top: 1em;
+}
+
+/*ines empíeza*/
+
+    .centrado{
+         margin:0 auto;
+        padding: 0 1em;
+    }
+    /* media query*/
+    @media screen and (min-width: 52em){
+        .centrado {  
+        max-width: 52em;
+     
+    }  }
+    /*fin media
+    .menu-cabecera{
+        text-align: center;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        border-bottom: 1px solid #ccc;
+    }
+    .menu-simple-menu ul{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        background: color #0f0ef0;
+    }
+    .menu-simple-menu li a
+    {   display:block;
+        color:#fff;
+        text-decoration:none;
+        padding: .6em 1em;
+        background-color:rgb(43, 6, 152);
+    }
+    .menu-simple-menu li a:hover {
+        background: #0e0e0f;
+    }
+    /* acá empieza el flexbox 
+    
+    .menu-simple-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .menu-simple-menu li {
+        flex: 1 0 auto;
+        text-align: center;}
+    .nombre-sitio {
+        margin: 0 0 1em;
+        padding: 1em 0;
+        text-align: center;
+        font-weight: 300;
+        color: aliceblue;
+    }*/
+    
+    .card a {
+        text-decoration: none;
+    }
+    .card a:hover {
+        box-shadow: 3px 3px 8px #32c914;
+    }
+    
+    .card-content {
+        padding: 1.4em;
+    }
+    
+    .card-content h2 {
+        margin-top: 0;
+        margin-bottom: .5em;
+        font-weight: normal;
+    }
+    
+    .card-content p {
+        font-size: 90%;
+    }
+    
+    figure {
+        margin: 0;
+    }
+    
+    img {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* empezamos con el flexbox */
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        background: #e4c07e;
+        margin-bottom: 2em;
+        width: 33%;
+    }
+    footer{
+        background-color: burlywood;
+        height:100%; 
+        padding-left:20px;;
+        background: hwb(75 30% 37%);
+        color:white; }  
