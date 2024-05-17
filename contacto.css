@@ -110,6 +110,16 @@ h2{
 	border-radius: 10px;
  }
 
+ .comunicacion{
+    width:10% ;
+    height:2em ;
+ }
+
+ #interes{
+    height: 2.5em;
+    margin-bottom:  70px;
+ }
+
  #enviar{
 	width: 40%;
 	height: 4em;

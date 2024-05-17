@@ -38,10 +38,28 @@
                     <input type="text" name="apellido" placeholder="Apellido" minlength="3" maxlength="20" required><br>
                     <input type="email" name="correo" placeholder="Coreo Electronico" required><br>
                     <input type="tel" name="contacto" placeholder="Telefono" required><br>
-                    <input type="number" name="miEdad" placeholder="Edad" min="18" max="105"><br>
-                    <input type="date" name="fecha" placeholder="Fecha de Nacimiento"><br>
-                    <input type="text" name="usuario"placeholder="Nombre de Usuario" pattern="[a-zA-Z0-9]{1,10}" title="Letras y numeros entre 1 y 8 caracteres" required><br>
-                    <input type="password" name="pass" placeholder="Contraseña"minlength="8"required ><br>
+                    <input type="number" name="miEdad" placeholder="Edad" min="18" max="105"><br><br>
+                    
+                    <label for="genero" class="label1">Con que genero te identificas: </label><br>
+                    <input type="radio" name="genero" id="femenino" class="comunicacion"> Femenino <br>
+                    <input type="radio" name="genero" id="masculino" class="comunicacion"> Masculino <br>
+                    <input type="radio" name="genero" id="nobinario" class="comunicacion"> No Binario <br>
+                    <input type="radio" name="genero" id="ninguno" class="comunicacion"> Ninguno <br><br>
+                    <label for="comunicacion" class="label1">Seleccione como quiere ser contactado: </label><br>
+                    <input type="checkbox" name="comunicacion[]" id="telefono" class="comunicacion"> Telefono<br>
+                    <input type="checkbox" name="comunicacion[]" id="email" class="comunicacion"> Correo Electronico<br>
+                    <input type="checkbox" name="comunicacion[]" id="WhatsApp" class="comunicacion"> WhatsApp<br><br>
+                    
+                    <label for="interes" class="label1">En qué propuesta estás interesado/a: </label>
+                        <select id="interes" name="interes">
+                          <option value="humahuaca">Humahuaca</option>
+                          <option value="salinas">Salinas</option>
+                          <option value="tren">Tren de las Nubes</option>
+                          <option value="tastil">Tastil</option>
+                        </select>
+                        
+                        <input type="text" name="usuario"placeholder="Nombre de Usuario" pattern="[a-zA-Z0-9]{1,10}" title="Letras y numeros entre 1 y 8 caracteres" required><br>
+                    <input type="password" name="pass" placeholder="Contraseña"minlength="8"required ><br><br>
                     <input type="submit" id="enviar"  value="Registrarse" onclick="validacion()" >
 
                 </form>
