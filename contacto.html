@@ -56,7 +56,9 @@
                           <option value="salinas">Salinas</option>
                           <option value="tren">Tren de las Nubes</option>
                           <option value="tastil">Tastil</option>
-                        </select>
+                        </select><br>
+                        <label for="imagen">Adjuntar Imagen:</label>
+                        <input class ="upload-image" type="file" onchange="readURL(this)" accept="image/*" required><br>
                         
                         <input type="text" name="usuario"placeholder="Nombre de Usuario" pattern="[a-zA-Z0-9]{1,10}" title="Letras y numeros entre 1 y 8 caracteres" required><br>
                     <input type="password" name="pass" placeholder="Contraseña"minlength="8"required ><br><br>
