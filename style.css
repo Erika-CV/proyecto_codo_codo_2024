@@ -15,7 +15,7 @@ header {
     align-items: center;
     height: 6em;
     width: 100%;
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
     background: #606c38;
@@ -124,9 +124,7 @@ header {
     justify-content: center;
 }
 
-.logotipo{
-filter: drop-shadow( 3px  5px  4px #cec742);
-}
+
 
 .card-img{
     filter: drop-shadow(02px 06px 4px #000);
@@ -144,21 +142,34 @@ filter: drop-shadow( 3px  5px  4px #cec742);
     background: none;
     
 }
-
+/* footer*/
+.logo-footer img {
+    height:6em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all(0.3s);
+}
+.logo-footer img:hover{
+    transform: scale(1.2);
+}
+.logotipo{
+    filter: drop-shadow( 3px  5px  4px #cec742);
+    }
 .pre{
+    width:20%;
     margin-top: 5vh;
     display: inline-flex;
    color: #CCD5AE;
    font-size: 20px;
    font-weight: bold;
-   margin-left: 11vh;
-   margin-right: 5vh;
+   margin-left: 3vh;
+   margin-right: 12vh;
 
 }
 #footer{
     background-color: #606c38;
     display: flex;
-    height: 200px;
+    height: auto;
     box-shadow: 0px 0px 5px 3px #818181;
     font-family: "Raleway";
 }
@@ -166,8 +177,6 @@ filter: drop-shadow( 3px  5px  4px #cec742);
 .whatsapp{
     position: 1;
 }
-
-
 
 .pre .iconitosF{
     width: 30px;
@@ -238,6 +247,15 @@ display: inline-flex;
     }
     .nav-menu_visible{
         left: 0%;
+    }
+
+    #footer{
+        display:block;
+       
+    }
+    .pre{
+        width:100%;
+        text-align: center;
     }
 
 /*fin media query*/
