@@ -6,21 +6,23 @@
 body{
     font-family: "Raleway";
     padding: 5em 0 0;
-    background:#FEFAE0;
+    background: #FEFAE0;
 }
 /*nav bar*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5em;
+    height: 6em;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background: #E9EDC9;
+    background: #606c38;
     padding: 10px;
-       
+    box-shadow: 0px 5px 5px 0px;
+    
+    
 }
 .logo{
     display:flex;
@@ -37,21 +39,25 @@ header {
     transform: scale(1.2);
 }
 
+.logotipo{
+    filter: drop-shadow( 3px  5px  4px #cec742);
+    }
+
 .nav-menu {
     display: flex;
     align-items: center;
- 
+   
 }
 .nav-enlace{
     text-decoration: none;
-    color:hsl(50, 62%, 91%);
+    color:rgb(254,250,224);
     font-size: 1.5em;
     font-weight: bold;
     padding: 1em 0.5em;
 }
 .nav-enlace:hover{
     background:#CCD5AE;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: 0.5s;
 
 }
@@ -70,6 +76,126 @@ header {
     background: none;
     border: none;
     display: none;
+}
+
+
+
+
+
+/*footer*/
+.logo-footer img {
+    height:6em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all(0.3s);
+}
+.logo-footer img:hover{
+    transform: scale(1.2);
+}
+.logotipo{
+    filter: drop-shadow( 3px  5px  4px #cec742);
+    }
+.pre{
+    width:20%;
+    margin-top: 5vh;
+    display: inline-flex;
+   color: #CCD5AE;
+   font-size: 20px;
+   font-weight: bold;
+   margin-left: 3vh;
+   margin-right: 12vh;
+
+}
+#footer{
+    background-color: #606c38;
+    display: flex;
+    height: auto;
+    box-shadow: 0px 0px 5px 3px #818181;
+    font-family: "Raleway";
+}
+
+.whatsapp{
+    position: 1;
+}
+
+.pre .iconitosF{
+    width: 30px;
+    display: flex;
+    margin-right: 8px;
+    margin-bottom: -55px;
+}
+.iEnLinea{
+display: inline-flex;
+}
+.whatsapp{
+    position: fixed;
+    right: 2vh;
+    bottom: 20px; 
+    z-index: 9999;
+    padding: 10px 20px;
+    width: 110px; 
+    height: 100px; 
+    filter: drop-shadow(-01px 02px 5px #181818);
+  }
+   .whatsapp a {
+    width: 200px; 
+    height: 150px; 
+   }
+
+@media screen and (max-width: 52em){
+    body{
+        padding-top: 4em;
+    }
+    .header{
+        height: 4em;
+    }
+    .logo img{
+        height: 4em;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        background-color: #ccd5ae;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0px;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        margin-top: 10px;
+        margin-bottom: 10px;  
+    }
+    .nav-enlace:hover{
+        background:none;
+        transition: none;
+        color:#dda15e;
+        
+    }
+    .nav-menu-item:hover{
+        transform: none;
+        
+    }
+    .toggle{
+        display: block;
+        padding-left: 16em;
+    }
+    .nav-menu_visible{
+        left: 0%;
+    }
+
+    #footer{
+        display:block;
+       
+    }
+    .pre{
+        width:100%;
+        text-align: center;
+    }
+
+/*fin media query*/
 }
 /* Media Query*/
 @media (max-width: 52em){
@@ -175,46 +301,6 @@ span{
         max-width: 52em;
      
     }  }
-    /*fin media
-    .menu-cabecera{
-        text-align: center;
-        padding-bottom: 2em;
-        margin-bottom: 2em;
-        border-bottom: 1px solid #ccc;
-    }
-    .menu-simple-menu ul{
-        list-style-type: none;
-        padding:0;
-        margin:0;
-        background: color #0f0ef0;
-    }
-    .menu-simple-menu li a
-    {   display:block;
-        color:#fff;
-        text-decoration:none;
-        padding: .6em 1em;
-        background-color:rgb(43, 6, 152);
-    }
-    .menu-simple-menu li a:hover {
-        background: #0e0e0f;
-    }
-    /* acá empieza el flexbox 
-    
-    .menu-simple-menu ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-around;
-    }
-    .menu-simple-menu li {
-        flex: 1 0 auto;
-        text-align: center;}
-    .nombre-sitio {
-        margin: 0 0 1em;
-        padding: 1em 0;
-        text-align: center;
-        font-weight: 300;
-        color: aliceblue;
-    }*/
     
     .card a {
         text-decoration: none;
@@ -261,9 +347,63 @@ span{
         margin-bottom: 2em;
         width: 33%;
     }
-    footer{
-        background-color: burlywood;
-        height:100%; 
-        padding-left:20px;;
-        background: hwb(75 30% 37%);
-        color:white; }  
+    .logo-footer img {
+        height:5em;
+        cursor: pointer;
+        transition: all(0.3s);
+    }
+    .logo-footer img:hover{
+        transform: scale(1.2);
+    }
+    .logotipo{
+        filter: drop-shadow( 3px  5px  4px #cec742);
+        }
+        .pre{
+            width:23%;
+            margin-top: 5vh;
+            display: inline-flex;
+           color: #CCD5AE;
+           font-size: 20px;
+           font-weight: bold;
+           margin-left: 2vh;
+           margin-right: 9vh;
+        
+        }
+    #footer{
+        background-color: #606c38;
+        display: flex;
+        height: auto;
+        box-shadow: 0px 0px 5px 3px #818181;
+        font-family: "Raleway";
+    }
+
+    
+.whatsapp{
+    position: 1;
+}
+
+.pre .iconitosF{
+    width: 30px;
+    display: flex;
+    margin-right: 8px;
+    margin-bottom: -55px;
+}
+.iEnLinea{
+display: inline-flex;
+}
+.whatsapp{
+    position: fixed;
+    right: 2vh;
+    bottom: 20px; 
+    z-index: 9999;
+    padding: 10px 20px;
+    width: 110px; 
+    height: 100px; 
+    filter: drop-shadow(-01px 02px 5px #181818);
+  }
+   .whatsapp a {
+    width: 200px; 
+    height: 150px; 
+   }
+
+   

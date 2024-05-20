@@ -186,8 +186,7 @@ h2{
  
  /*footer*/
  .logo-footer img {
-    height:6em;
-    margin-right: 1em;
+    height:5em;
     cursor: pointer;
     transition: all(0.3s);
 }
@@ -197,17 +196,17 @@ h2{
 .logotipo{
     filter: drop-shadow( 3px  5px  4px #cec742);
     }
-.pre{
-    width:20%;
-    margin-top: 5vh;
-    display: inline-flex;
-   color: #CCD5AE;
-   font-size: 20px;
-   font-weight: bold;
-   margin-left: 3vh;
-   margin-right: 12vh;
-
-}
+    .pre{
+        width:23%;
+        margin-top: 5vh;
+        display: inline-flex;
+       color: #CCD5AE;
+       font-size: 20px;
+       font-weight: bold;
+       margin-left: 2vh;
+       margin-right: 9vh;
+    
+    }
 #footer{
     background-color: #606c38;
     display: flex;
