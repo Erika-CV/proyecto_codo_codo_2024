@@ -18,9 +18,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #606c38;
+    background: #E9EDC9;
     padding: 10px;
-    box-shadow: 0px 5px 5px 0px;
     
     
 }
@@ -38,10 +37,6 @@ header {
 .logo img:hover{
     transform: scale(1.2);
 }
-
-.logotipo{
-    filter: drop-shadow( 3px  5px  4px #cec742);
-    }
 
 .nav-menu {
     display: flex;
@@ -91,7 +86,7 @@ header {
     
     .nav-menu{
         flex-direction: column;
-        background-color: #ccd5ae;
+        background-color: #CCD5AE;
         position: fixed;
         left: 0;
         top: 60px;
@@ -107,7 +102,7 @@ header {
     .nav-enlace:hover{
         background:none;
         transition: none;
-        color:#dda15e;
+        color:#D4A373;
         
     }
     .nav-menu-item:hover{
@@ -120,7 +115,119 @@ header {
     }
     .nav-menu_visible{
         left: 0%;
-    }
-
+    }    }
 /*fin media query*/
+
+/* presentacion*/
+
+h1 {
+    font-size: 2em;
+    color: #D4A373;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
+
+h2{
+    font-size: 1.8em;
+    color:#D4A373
+}
+
+.empresa{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+}
+span{
+    font-weight: bold;
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+.parrafo{
+    padding-top: 1em;
+}
+
+.presentacion{
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.negrita{
+    font-weight: bold;
+    font-size: 1.2em;
+    font-style: italic;
+}
+.titulo_secundario{
+    font-size: 3em;
+    color: #D4A373;
+    text-align: center;
+    padding-top: 1em;
+}
+
+/*ines empíeza*/
+
+    .centrado{
+         margin:0 auto;
+        padding: 0 1em;
+    }
+    /* media query*/
+    @media screen and (min-width: 52em){
+        .centrado {  
+        max-width: 52em;
+     
+    }  }
+        
+    .card a {
+        text-decoration: none;
+    }
+    .card a:hover {
+        box-shadow: 3px 3px 8px #32c914;
+    }
+    
+    .card-content {
+        padding: 1.4em;
+    }
+    
+    .card-content h2 {
+        margin-top: 0;
+        margin-bottom: .5em;
+        font-weight: normal;
+    }
+    
+    .card-content p {
+        font-size: 90%;
+    }
+    
+    figure {
+        margin: 0;
+    }
+    
+    img {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* empezamos con el flexbox */
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        background: #e4c07e;
+        margin-bottom: 2em;
+        width: 33%;
+    }
+    footer{
+        background-color: burlywood;
+        height:100%; 
+        padding-left:20px;;
+        background: hwb(75 30% 37%);
+        color:white; }  
+ 
+
+ 
