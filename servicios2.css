@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 body{
+    width: 100%;
     font-family: "Raleway";
     padding: 5em 0 0;
-    background: #FEFAE0;
+    background-color: #FEFAE0;
 }
 /*nav bar*/
 header {
@@ -15,15 +16,15 @@ header {
     align-items: center;
     height: 6em;
     width: 100%;
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     background: #606c38;
     padding: 10px;
-    box-shadow: 0px 5px 5px 0px;
-    
+    box-shadow: 0px 5px 5px 0px #818181;
     
 }
+
 .logo{
     display:flex;
     align-items: center;
@@ -39,10 +40,6 @@ header {
     transform: scale(1.2);
 }
 
-.logotipo{
-    filter: drop-shadow( 3px  5px  4px #cec742);
-    }
-
 .nav-menu {
     display: flex;
     align-items: center;
@@ -54,6 +51,7 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     padding: 1em 0.5em;
+    
 }
 .nav-enlace:hover{
     background:#CCD5AE;
@@ -80,8 +78,6 @@ header {
 
 
 
-
-
 /*footer*/
 .logo-footer img {
     height:6em;
@@ -102,7 +98,7 @@ header {
    color: #CCD5AE;
    font-size: 20px;
    font-weight: bold;
-   margin-left: 3vh;
+   
    margin-right: 12vh;
 
 }
@@ -197,53 +193,6 @@ display: inline-flex;
 
 /*fin media query*/
 }
-/* Media Query*/
-@media (max-width: 52em){
-    body{
-        padding-top: 4em;
-    }
-    .header{
-        height: 4em;
-    }
-    .logo img{
-        height: 4em;
-    }
-    
-    .nav-menu{
-        flex-direction: column;
-        background-color:#35420af1;
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-        padding: 20px 0px;
-        left: 100%;
-        transition: left 0.3s;
-    }
-    .nav-menu-item{
-        margin-top: 10px;
-        margin-bottom: 10px;  
-    }
-    .nav-enlace:hover{
-        background:none;
-        transition: none;
-        color:#D4A373;
-        
-    }
-    .nav-menu-item:hover{
-        transform: none;
-        
-    }
-    .toggle{
-        display: block;
-        padding-left: 16em;
-    }
-    .nav-menu_visible{
-        left: 0%;
-    }
- }
- 
-/* presentacion*/
 
 h1 {
     font-size: 2em;
@@ -273,10 +222,6 @@ span{
     padding-top: 1em;
 }
 
-.presentacion{
-    padding-left: 4em;
-    padding-right: 4em;
-}
 .negrita{
     font-weight: bold;
     font-size: 1.2em;
@@ -289,121 +234,22 @@ span{
     padding-top: 1em;
 }
 
-/*ines empíeza*/
-
-    .centrado{
-         margin:0 auto;
-        padding: 0 1em;
-    }
-    /* media query*/
-    @media screen and (min-width: 52em){
-        .centrado {  
-        max-width: 52em;
-     
-    }  }
-    
-    .card a {
-        text-decoration: none;
-    }
-    .card a:hover {
-        box-shadow: 3px 3px 8px #32c914;
-    }
-    
-    .card-content {
-        padding: 1.4em;
-    }
-    
-    .card-content h2 {
-        margin-top: 0;
-        margin-bottom: .5em;
-        font-weight: normal;
-    }
-    
-    .card-content p {
-        font-size: 90%;
-    }
-    
-    figure {
-        margin: 0;
-    }
-    
-    img {
-        display: block;
-        border: 0;
-        width: 100%;
-        height: auto;
-    }
-    
-    /* empezamos con el flexbox */
-    
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .card {
-        background: #e4c07e;
-        margin-bottom: 2em;
-        width: 33%;
-    }
-    .logo-footer img {
-        height:5em;
-        cursor: pointer;
-        transition: all(0.3s);
-    }
-    .logo-footer img:hover{
-        transform: scale(1.2);
-    }
-    .logotipo{
-        filter: drop-shadow( 3px  5px  4px #cec742);
-        }
-        .pre{
-            width:23%;
-            margin-top: 5vh;
-            display: inline-flex;
-           color: #CCD5AE;
-           font-size: 20px;
-           font-weight: bold;
-           margin-left: 2vh;
-           margin-right: 9vh;
-        
-        }
-    #footer{
-        background-color: #606c38;
-        display: flex;
-        height: auto;
-        box-shadow: 0px 0px 5px 3px #818181;
-        font-family: "Raleway";
-    }
-
-    
-.whatsapp{
-    position: 1;
-}
-
-.pre .iconitosF{
-    width: 30px;
+.cards {
     display: flex;
-    margin-right: 8px;
-    margin-bottom: -55px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.iEnLinea{
-display: inline-flex;
-}
-.whatsapp{
-    position: fixed;
-    right: 2vh;
-    bottom: 20px; 
-    z-index: 9999;
-    padding: 10px 20px;
-    width: 110px; 
-    height: 100px; 
-    filter: drop-shadow(-01px 02px 5px #181818);
-  }
-   .whatsapp a {
-    width: 200px; 
-    height: 150px; 
-   }
 
-   
+.card {
+    background: #e4c07e;
+    margin-bottom: 2em;
+    width: 33%;
+}
+
+.centrado{
+    width: 100%;
+}
+.card img{
+    width: 445px;
+}
+
