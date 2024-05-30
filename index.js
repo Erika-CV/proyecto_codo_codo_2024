@@ -52,23 +52,23 @@ var validacion = () => {
 
 
 //API 
-async function currency(from, to, amount) {
-    const response = await fetch(`https://www.google.com/finance/converter?a=${amount}&from=${from}&to=${to}`);
-    const text = await response.text();
+async function convertCurrency() {
+    const amount = document.getElementById('amount').value;
+    const from = document.getElementById('fromCurrency').value;
+    const to = document.getElementById('toCurrency').value;
 
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(text, 'text/html');
+    const apiKey = 'TU_API_KEY'; // Reemplaza 'TU_API_KEY' con tu clave de API de ExchangeRate-API
+    const url = `https://v6.exchangerate-api.com/v6/${apiKey}/pair/${from}/${to}/${amount}`;
 
-    const resultElement = doc.querySelector('#currency_converter_result span');
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
 
-    if (resultElement) {
-        const result = resultElement.textContent;
-        return result.replace(` ${to}`, '');
-    } else {
-        throw new Error('Conversion result not found');
-    }
-}
-
-currency('USD', 'DOP', 1)
-    .then(result => console.log(result))
-    .catch(error => console.error('Error:', error));
+        if (data.result === 'success') {
+            const result = data.conversion_result;
+            document.getElementById('result').textContent = `${amount} ${from} = ${result} ${to}`;
+        } else {
+            document.getElementById('result').textContent = 'Error: No se pudo obtener la conversión';
+        }
+    } catch (error) {
+        document.getElementById('result').textContent = 'Error: ' + error.message;}}
