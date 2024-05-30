@@ -51,44 +51,24 @@ var validacion = () => {
 }
 
 
-// api rest
-const api_key = "DEMO_API_KEY";
-const url = `https://api.thecatapi.com/v1/images/search?limit=20`;
+//API 
+async function currency(from, to, amount) {
+    const response = await fetch(`https://www.google.com/finance/converter?a=${amount}&from=${from}&to=${to}`);
+    const text = await response.text();
 
-function fetchImages() {
-    fetch(url, {
-        headers: {
-            'x-api-key': api_key
-        }
-    })
-    .then((response) => response.json())
-    .then((data) => {
-        displayImages(data);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/html');
+
+    const resultElement = doc.querySelector('#currency_converter_result span');
+
+    if (resultElement) {
+        const result = resultElement.textContent;
+        return result.replace(` ${to}`, '');
+    } else {
+        throw new Error('Conversion result not found');
+    }
 }
 
-function displayImages(imagesData) {
-    const grid = document.getElementById('grid');
-    grid.innerHTML = ''; // vaciar el grid antes de agragr imagenes
-
-    imagesData.forEach(function(imageData) {
-        let image = document.createElement('img');
-        image.src = `${imageData.url}`;
-        
-        let gridCell = document.createElement('div');
-        gridCell.classList.add('col');
-        gridCell.classList.add('col-lg');
-        gridCell.appendChild(image);
-        
-        grid.appendChild(gridCell);
-    });
-}
-
-// Fetch and display imagenes cuando se carga la pagina
-window.onload = fetchImages;
-
-// Fetch and display images cuando se hace click en el boton
-document.getElementById('refresh-button').addEventListener('click', fetchImages);
+currency('USD', 'DOP', 1)
+    .then(result => console.log(result))
+    .catch(error => console.error('Error:', error));

@@ -264,3 +264,25 @@ display: inline-flex;
 /*fin media query*/
 }
 
+/*APi*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.converter {
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.converter input, .converter select, .converter button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+}
