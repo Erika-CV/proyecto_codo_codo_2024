@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: "Raleway";
     padding: 5em 0 0;
     background: #FEFAE0;
 }
+
 /*nav bar*/
 header {
     display: flex;
@@ -24,6 +26,7 @@ header {
     
     
 }
+
 .logo{
     display:flex;
     align-items: center;
@@ -36,14 +39,13 @@ header {
     cursor: pointer;
     transition: all(0.3s);
 }
+
 .logo img:hover{
     transform: scale(1.2);
 }
-
 .logotipo{
     filter: drop-shadow( 3px  5px  4px #cec742);
     }
-
 .nav-menu {
     display: flex;
     align-items: center;
@@ -56,12 +58,14 @@ header {
     font-weight: bold;
     padding: 1em 0.5em;
 }
+
 .nav-enlace:hover{
     background:#CCD5AE;
     border-radius: 30px;
     transition: 0.5s;
 
 }
+
 .nav-menu-item{
     margin-right: 40px;
     list-style: none;
@@ -77,87 +81,63 @@ header {
     background: none;
     border: none;
     display: none;
-    
 }
+/* */
 
-/* presentacion*/
-.banner{
-    width: 100%;
 
-}
-
-h1 {
-    font-size: 3em;
-    color: #606c38;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-h2{
-    font-size: 2.5em;
-    color:#606c38
-}
-
-.empresa{
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.5em;
-}
-span{
-    font-weight: bold;
-    font-size: 1.6em;
-    font-style: italic;
-}
-
-.parrafo{
-    padding-top: 1em;
-}
-
-.presentacion{
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-bottom: 4em;
-}
-.negrita{
-    font-weight: bold;
-    font-size: 1.2em;
-    font-style: italic;
-}
-.titulo_secundario{
-    font-size: 3em;
-    color: #606c38;
-    text-align: center;
-    padding-top: 1em;
-    
-}
-p{
-    font-size: 1.5em;
-}
-
-/* Nuestro Equipo*/
-.equipo{
+.maincontent{
+    padding-top: 3em;
+    padding-left:2em;
+    padding-right: 2em;
+  }
+  
+  .col {
+    padding: 1%;
+  }
+  .col-lg{
+      height: 200px;
+      overflow: hidden;
+      margin: 10px 0;
+      position: relative;
+      flex-basis: 30%;
+  }
+  
+    /* Las imágenes se recortan y centran en la caja col-lg hasta 1000% de centrado (si es 100% si es 3x el tamaño no se centra completamente */
+  .col-lg img{
+    display:block;
+      position: absolute;
+      left: -1000%;
+      right: -1000%;
+      top: -1000%;
+      bottom: -1000%;
+      margin: auto;
+      min-height: 100%;
+      min-width: 100%;
+  }
+  .imgrid {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5em;
-    margin-right: 3em;
-    margin-bottom: 5em;
-}
-.equipo1{
-    width: 33%;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom:50px ;
-}
-.foto{
-    border-radius: 30px;
-}
-.linkedin{
-    text-decoration: none;
-}
+    justify-content: space-between;
+  }
 
-/*footer*/
-.logo-footer img {
+  #refresh-button{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 20em;
+    height: 4em;
+    text-align: center;
+    color: #FEFAE0;
+    background-color:#dda15e;
+    border-radius: 30px;
+    font-size: 1em;
+    
+    
+ 
+ }
+
+
+  /*footer*/
+ .logo-footer img {
     height:5em;
     cursor: pointer;
     transition: all(0.3s);
@@ -168,7 +148,7 @@ p{
 .logotipo{
     filter: drop-shadow( 3px  5px  4px #cec742);
     }
- .pre{
+    .pre{
         width:23%;
         margin-top: 5vh;
         display: inline-flex;
@@ -215,45 +195,19 @@ display: inline-flex;
     height: 150px; 
    }
 
-   
-.whatsapp{
-    position: 1;
-}
 
-.pre .iconitosF{
-    width: 30px;
-    display: flex;
-    margin-right: 8px;
-    margin-bottom: -55px;
-}
-.iEnLinea{
-display: inline-flex;
-}
-.whatsapp{
-    position: fixed;
-    right: 2vh;
-    bottom: 20px; 
-    z-index: 9999;
-    padding: 10px 20px;
-    width: 110px; 
-    height: 100px; 
-    filter: drop-shadow(-01px 02px 5px #181818);
-  }
-   .whatsapp a {
-    width: 200px; 
-    height: 150px; 
-   }
+/*media query*/
 
+@media screen and (max-width: 52em){
 
-
-/* Media Query*/
-@media (max-width: 52em){
     body{
         padding-top: 4em;
     }
+
     .header{
         height: 4em;
     }
+
     .logo img{
         height: 4em;
     }
@@ -269,10 +223,12 @@ display: inline-flex;
         left: 100%;
         transition: left 0.3s;
     }
+
     .nav-menu-item{
         margin-top: 10px;
         margin-bottom: 10px;  
     }
+
     .nav-enlace:hover{
         background:none;
         transition: none;
@@ -280,47 +236,22 @@ display: inline-flex;
         
     }
     .nav-menu-item:hover{
-        transform: none;
-        
+        transform: none;   
     }
+
     .toggle{
         display: block;
-        padding-left: 16em;
+        padding-left: 10em;
     }
+
     .nav-menu_visible{
         left: 0%;
     }
+    .maincontent{
+        padding-top: 280px;
 
-    h1{
-        font-size: 2em;
     }
-    h2{
-        font-size: 1.5em;
-    }
-    span{
-        font-size: 1em;
-    }
-    .negrita{
-        font-size: 1em;
-    }
-    .empresa{
-        font-size: 1.2em;
-    }
-    p{
-        font-size: 1.2em;
-    }
-    .titulo_secundario{
-        font-size: 2em;
-    }
-
-    /*nuestro equipo*/
-    .equipo{
-        display:block;
-    }
-
-    .equipo1{
-        width: 80%;
-    }
+    
 
     #footer{
         display:block;
@@ -331,6 +262,6 @@ display: inline-flex;
         text-align: center;
     }
 
-    
-   
+
 }
+/*fin media query*/
