@@ -84,20 +84,7 @@ header {
 }
 /* */
 
-#refresh-button{
-   margin-top: 3em;
-   margin-bottom: 3em;
-   width: 20em;
-   height: 4em;
-   text-align: center;
-   color: #FEFAE0;
-   background-color:#dda15e;
-   border-radius: 30px;
-   font-size: 1em;
-   
-   
 
-}
 .maincontent{
     padding-top: 3em;
     padding-left:2em;
@@ -133,6 +120,20 @@ header {
     justify-content: space-between;
   }
 
+  #refresh-button{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 20em;
+    height: 4em;
+    text-align: center;
+    color: #FEFAE0;
+    background-color:#dda15e;
+    border-radius: 30px;
+    font-size: 1em;
+    
+    
+ 
+ }
 
 
   /*footer*/
@@ -246,6 +247,11 @@ display: inline-flex;
     .nav-menu_visible{
         left: 0%;
     }
+    .maincontent{
+        padding-top: 280px;
+
+    }
+    
 
     #footer{
         display:block;
