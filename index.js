@@ -49,3 +49,46 @@ var validacion = () => {
     // Si todo está bien, permitir el envío del formulario
     return true;
 }
+
+
+// api rest
+const api_key = "DEMO_API_KEY";
+const url = `https://api.thecatapi.com/v1/images/search?limit=20`;
+
+function fetchImages() {
+    fetch(url, {
+        headers: {
+            'x-api-key': api_key
+        }
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        displayImages(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+}
+
+function displayImages(imagesData) {
+    const grid = document.getElementById('grid');
+    grid.innerHTML = ''; // Clear the grid before adding new images
+
+    imagesData.forEach(function(imageData) {
+        let image = document.createElement('img');
+        image.src = `${imageData.url}`;
+        
+        let gridCell = document.createElement('div');
+        gridCell.classList.add('col');
+        gridCell.classList.add('col-lg');
+        gridCell.appendChild(image);
+        
+        grid.appendChild(gridCell);
+    });
+}
+
+// Fetch and display images when the page loads
+window.onload = fetchImages;
+
+// Fetch and display images when the button is clicked
+document.getElementById('refresh-button').addEventListener('click', fetchImages);
