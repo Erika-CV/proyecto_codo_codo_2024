@@ -72,7 +72,7 @@ function fetchImages() {
 
 function displayImages(imagesData) {
     const grid = document.getElementById('grid');
-    grid.innerHTML = ''; // Clear the grid before adding new images
+    grid.innerHTML = ''; // vaciar el grid antes de agragr imagenes
 
     imagesData.forEach(function(imageData) {
         let image = document.createElement('img');
@@ -87,8 +87,8 @@ function displayImages(imagesData) {
     });
 }
 
-// Fetch and display images when the page loads
+// Fetch and display imagenes cuando se carga la pagina
 window.onload = fetchImages;
 
-// Fetch and display images when the button is clicked
+// Fetch and display images cuando se hace click en el boton
 document.getElementById('refresh-button').addEventListener('click', fetchImages);
