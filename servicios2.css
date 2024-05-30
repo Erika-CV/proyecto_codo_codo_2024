@@ -141,7 +141,7 @@ display: inline-flex;
     width: 200px; 
     height: 150px; 
    }
-
+/* Media Query*/
 @media screen and (max-width: 52em){
     body{
         padding-top: 4em;
