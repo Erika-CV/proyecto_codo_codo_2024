@@ -34,9 +34,12 @@
     <section class="presentacion">
         <div>
             <h1 class="titulo_principal">Nuestros Servicios</h1>
-         </div>   
+            </div>   
                  <div class="centrado">
-            <!-- Contenedor principal -->
+
+            <!-- MODIFICACIONES PARA EL TPO: ESTABAN CAMBIADAS DE LUGAR UN PAR DE LEYENDAS DE LAS CARDS
+                Y AGREGUÉ UNA LISTA EN HOSPEDAJE. 
+                MODIFIQUÉ EL FORMULARIO DE INFORMACIÓN PERO PREFIERE ERI NO AGREGARLO Y QUEDA LA APPi-->
             <main id="contenido" class="contenedor clearfix">   
                 <section class="cards">
                     <article class="card">
@@ -46,9 +49,16 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                            <h3>Hospedajes</h3><br>
-                            <p> Además de la hotelería tradicional, propiciamos locaciones rurales para pasar días apacibles en medio de la naturaleza. 
-                                Cabañas, hostales y campings para los amantes del turismo rurales. </p>
+                            <h3>Hospedajes</h3><br><br>
+                            <p> Propiciamos locaciones a la medida de cada viajero, 
+                                tanto rurales en plena naturaleza como en el centro 
+                                de cada ciduad: 
+                                <ul>
+                                    <li> Hoteleria de primer nivel</li> <br>
+                                    <li> Hostales confortables</li> <br>
+                                    <li> Cabañas de montaña </li> <br>
+                                    <li> Camping y motorhome</li>
+                                </ul> </p>
                         </div>
                     </article>
                     <article class="card">
@@ -58,8 +68,15 @@
                         </a>
                         <div class="card-content"> 
                             <h3>Zona Noroeste</h3><br>
-                        <p>Diagramamos la forma mas sencilla de conocer nuestro país por zonas, 
-                        en esta ocasión, tres provincias: Tucumán, Jujuy y Salta</p>
+                        <p> Aventuras en Argentina ofrece una forma mas sencilla de conocer 
+                            por zonas nuestro país. En esta ocasión, diagramamos itirnerarios
+                            a tres provincias de la zona Noroeste (NOA), elegidas 
+                            por sus atractivos naturales e históricos:<br><br>
+                            <ul>
+                                <li>Tucumán,</li><br>
+                                <li>Salta</li><br>
+                                <li>Jujuy</li><br>
+                            </ul>  </p>
                         </div>
                     </article>
                     <article class="card">
@@ -70,8 +87,13 @@
                         </a>
                          <div class="card-content"> 
                             <h3>Ruta de artesanos</h3><br>
-                            <p>Programamos excursiones para difundir el arte centenario de cada provincia, utilizando 
-                            técnicas autóctonas de tapicería, cestería, alfarería y orfebrería</p>
+                            <p> Programamos excursiones para difundir el arte de cada lugar 
+                                y sus artesanías elaboradas con técnicas autóctonas:<br> <br>
+                                <ul>
+                                    <li>Tapicería y alfombras</li><br>
+                                    <li>Cestería y capintería</li> <br>
+                                    <li>Algarería y orfebreria</li><br>
+                           </ul> </p>
                         </div>
                         </article>                   
                     <article class="card">
@@ -82,7 +104,13 @@
                         </a>
                         <div class="card-content"> 
                         <h3>Lugares con historia</h3><br>
-                        <p>Visitas a lugares que guardan la tradición y belleza colonial del interior de Argentina que merecen ser recorridos por el visitante </p>
+                        <p> Visitas a lugares que guardan la tradición y belleza colonial 
+                            del interior de Argentina:<br> <br>
+                            <ul>
+                                <li>Museos y edificios de siglos pasados</li><br>
+                                <li>Catedrales, iglesias y capillas</li> <br>
+                                <li>Ruinas y yacimientos arqueológicos</li><br>
+                       </ul></p>
                         </div>
                     </article>
         
@@ -94,8 +122,13 @@
                         </a>
                         <div class="card-content"> 
                             <h3>Atractivos de montaña</h3> <br>
-                            <p>Programas de senderismo, trekking, cabalgata, mountain bike, ala delta, 
-                             deportes naúticos y todo tipo de actividades al aire libre </p>
+                            <p>Programas de actividades físicas al aire libre: <br><br>
+                                <ul>
+                                <li>Senderismo, trekking</li><br>
+                                <li>Cabalgadas, escaladas</li> <br>
+                                <li>Ala delta, mountain bike, </li><br>
+                                <li>Deportes náuticos</li> 
+                            </ul> </p>
                         </div>
                     </article>
                     <article class="card">
@@ -105,14 +138,22 @@
                             </figure>
                         </a>
                        <div class="card-content"> 
-                            <h3>Itinerarios</h3> <br>
-                            <p>Los paisajes, la vegetación y el clima a lo largo del año, ofrecen maravillosas jornadas  
-                             para ser descubiertas por el viajero siguiendo nuestros itinerarios.</p>
+                            <h3>Nuestros Itinerarios</h3> <br>
+                            <p>Ofrecen al viajero maravillosas jornadas: <br><br>
+                                <ul>
+                                <li>City tours</li><br>
+                                <li>Actividades físicas al aires libre</li> <br>
+                                <li>Rutas históricas</li><br>
+                                <li>Visitas a reservas naturales</li> 
+                            </ul>
+                               </p>
                         </div>
                     </article>
                 </section>
             </main>
- <footer>     <div> <br>
+<!--HASTA ACA MODIFICADO SERVICIOS2 para el TPO Y COMIENZA EL FORMULARIO -->
+
+<footer>     <div> <br>
         <legend> <h3> INFORMACIÓN SOBRE NUESTROS ITINERARIOS PERSONALIZADOS</h3></legend>
       <br><form method="get">
             <label for="itinerarios"></label>
@@ -149,7 +190,7 @@
         </select>
         </article> <br> <br>
         <article>
-            <label for="otros contactos"> CONTACTOS EN CABA
+            <label for="otros contactos"> CONTACTOS EN C.A.B.A.
             <input type="radio"
             name="otros contactos"
             value="si"/> </label>
