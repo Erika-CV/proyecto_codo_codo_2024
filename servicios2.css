@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin:0;
     padding: 0;
@@ -130,6 +132,7 @@ span{
 
 .centrado{
     width: 100%;
+   
 }
 .card img{
     width: 445px;
@@ -162,6 +165,7 @@ span{
 
 }
 #footer{
+    
     background-color: #606c38;
     display: flex;
     height: auto;
@@ -286,3 +290,17 @@ body {
     margin-top: 10px;
     font-weight: bold;
 }
+
+.card{
+    box-shadow: 1px 0px 5px 3px #242323;
+}
+
+.card-content{
+    font-family: "Open Sans", sans-serif;
+}
+
+.tituloCards{
+   text-decoration: underline;
+   text-align: center;
+}
+

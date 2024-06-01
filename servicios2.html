@@ -52,7 +52,7 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                            <h3>Hospedajes</h3><br>
+                            <h3 class="tituloCards" >Hospedajes</h3><br>
                             <p> Además de la hotelería tradicional, propiciamos locaciones rurales para pasar días apacibles en medio de la naturaleza. 
                                 Cabañas, hostales y campings para los amantes del turismo rurales. </p>
                         </div>
@@ -63,7 +63,7 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                            <h3>Zona Noroeste</h3><br>
+                            <h3  class="tituloCards" >Zona Noroeste</h3><br>
                         <p>Diagramamos la forma mas sencilla de conocer nuestro país por zonas, 
                         en esta ocasión, tres provincias: Tucumán, Jujuy y Salta</p>
                         </div>
@@ -75,7 +75,7 @@
                         </figure>
                         </a>
                          <div class="card-content"> 
-                            <h3>Ruta de artesanos</h3><br>
+                            <h3  class="tituloCards" >Ruta de artesanos</h3><br>
                             <p>Programamos excursiones para difundir el arte centenario de cada provincia, utilizando 
                             técnicas autóctonas de tapicería, cestería, alfarería y orfebrería</p>
                         </div>
@@ -87,7 +87,7 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                        <h3>Lugares con historia</h3><br>
+                        <h3  class="tituloCards" >Lugares con historia</h3><br>
                         <p>Visitas a lugares que guardan la tradición y belleza colonial del interior de Argentina que merecen ser recorridos por el visitante </p>
                         </div>
                     </article>
@@ -99,7 +99,7 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                            <h3>Atractivos de montaña</h3> <br>
+                            <h3  class="tituloCards" >Atractivos de montaña</h3> <br>
                             <p>Programas de senderismo, trekking, cabalgata, mountain bike, ala delta, 
                              deportes naúticos y todo tipo de actividades al aire libre </p>
                         </div>
@@ -111,36 +111,40 @@
                             </figure>
                         </a>
                        <div class="card-content"> 
-                            <h3>Itinerarios</h3> <br>
+                            <h3  class="tituloCards" >Itinerarios</h3> <br>
                             <p>Los paisajes, la vegetación y el clima a lo largo del año, ofrecen maravillosas jornadas  
                              para ser descubiertas por el viajero siguiendo nuestros itinerarios.</p>
                         </div>
                     </article>
-                </section>
+                </section><br><br><br>
+
+                <section class="conversor" >
+                    <div class="converter">
+                        <h2>Conversor de Divisas</h2>
+                        <input type="number" id="amount" placeholder="Cantidad" />
+                        <select id="fromCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="DOP">DOP</option>
+                            <option value="ARS">ARS</option>
+                            <!-- Agrega más opciones según necesites -->
+                        </select>
+                        <select id="toCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="DOP">DOP</option>
+                            <option value="ARS">ARS</option>
+                            <!-- Agrega más opciones según necesites -->
+                        </select>
+                        <button onclick="convertCurrency()">Convertir</button>
+                        <div class="result" id="result"></div>
+                    </div>
+                  </section><br><br><br><br>
+
+                  
             </main>
 
-            <section class="conversor" >
-                <div class="converter">
-                    <h2>Conversor de Divisas</h2>
-                    <input type="number" id="amount" placeholder="Cantidad" />
-                    <select id="fromCurrency">
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="DOP">DOP</option>
-                        <option value="ARS">ARS</option>
-                        <!-- Agrega más opciones según necesites -->
-                    </select>
-                    <select id="toCurrency">
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="DOP">DOP</option>
-                        <option value="ARS">ARS</option>
-                        <!-- Agrega más opciones según necesites -->
-                    </select>
-                    <button onclick="convertCurrency()">Convertir</button>
-                    <div class="result" id="result"></div>
-                </div>
-              </section>
+
 
    <footer>
     <div id="footer" >

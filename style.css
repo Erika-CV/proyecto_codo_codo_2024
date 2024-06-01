@@ -7,7 +7,7 @@ body{
     width: 100%;
     font-family: "Raleway";
     padding: 5em 0 0;
-    background-color: #FEFAE0;
+    background-color: #ffffff;
 }
 /*nav bar*/
 header {
@@ -274,10 +274,6 @@ display: inline-flex;
 /*Api*/
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
 .converter {
     max-width: 300px;
     margin: auto;
@@ -295,3 +291,13 @@ body {
     margin-top: 10px;
     font-weight: bold;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000000;
+    border-radius: 25%;
+}
+
+#reservas{
+    width: 100%;
+}
+
