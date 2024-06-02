@@ -14,7 +14,7 @@
         <div class="logo">
             <a href="index.html" class="aventuras">
                 <figure>
-                    <img src="./imagenes/logo_1.png" alt="logo compañia">
+                    <img class="logotipo"  src="./imagenes/logo_1.png" alt="logo compañia">
                 </figure>
             </a>
                <button type="button" class="toggle">
@@ -25,21 +25,23 @@
             <ul class="nav-menu">
                <li class="nav-menu-item"><a class="nav-enlace" href="index.html">Inicio</a></li>
                <li class="nav-menu-item"><a class="nav-enlace" href="nosotros.html">Nosotros</a></li>
-               <li class="nav-menu-item"><a class="nav-enlace" href="servicios.html">Servicios</a></li>
+               <li class="nav-menu-item"><a class="nav-enlace" href="servicios2.html">Servicios</a></li>
                <li class="nav-menu-item"><a class="nav-enlace" href="contacto.html">Contacto</a></li>
+              
            </ul>
        </nav>
    </header>
-   <main>
-    <section class="presentacion">
+<div  class="whatsapp">
+    <a  href=""> <img class="whatsapp" src="./imagenes/whatsapp2 (1).png" alt=""> </a>
+    </div>
+   
         <div>
             <h1 class="titulo_principal">Nuestros Servicios</h1>
-            </div>   
-                 <div class="centrado">
+            
+        </div>
+        <div class="centrado">
 
-            <!-- MODIFICACIONES PARA EL TPO: ESTABAN CAMBIADAS DE LUGAR UN PAR DE LEYENDAS DE LAS CARDS
-                Y AGREGUÉ UNA LISTA EN HOSPEDAJE. 
-                MODIFIQUÉ EL FORMULARIO DE INFORMACIÓN PERO PREFIERE ERI NO AGREGARLO Y QUEDA LA APPi-->
+            <!-- Contenedor principal -->
             <main id="contenido" class="contenedor clearfix">   
                 <section class="cards">
                     <article class="card">
@@ -49,10 +51,10 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                            <h3>Hospedajes</h3><br><br>
+                           <h2>Hospedajes</h2><br><br> 
                             <p> Propiciamos locaciones a la medida de cada viajero, 
                                 tanto rurales en plena naturaleza como en el centro 
-                                de cada ciduad: 
+                                de cada ciduad: <br><br>
                                 <ul>
                                     <li> Hoteleria de primer nivel</li> <br>
                                     <li> Hostales confortables</li> <br>
@@ -67,7 +69,7 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                            <h3>Zona Noroeste</h3><br>
+                            <h2>Zona Noroeste</h2><br><br>
                         <p> Aventuras en Argentina ofrece una forma mas sencilla de conocer 
                             por zonas nuestro país. En esta ocasión, diagramamos itirnerarios
                             a tres provincias de la zona Noroeste (NOA), elegidas 
@@ -86,7 +88,7 @@
                         </figure>
                         </a>
                          <div class="card-content"> 
-                            <h3>Ruta de artesanos</h3><br>
+                            <h2>Ruta de artesanos</h2><br><br>
                             <p> Programamos excursiones para difundir el arte de cada lugar 
                                 y sus artesanías elaboradas con técnicas autóctonas:<br> <br>
                                 <ul>
@@ -103,7 +105,7 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                        <h3>Lugares con historia</h3><br>
+                        <h2>Lugares con historia</h2><br><br>
                         <p> Visitas a lugares que guardan la tradición y belleza colonial 
                             del interior de Argentina:<br> <br>
                             <ul>
@@ -121,7 +123,7 @@
                             </figure>
                         </a>
                         <div class="card-content"> 
-                            <h3>Atractivos de montaña</h3> <br>
+                            <h2>Atractivos de montaña</h2> <br> <br>
                             <p>Programas de actividades físicas al aire libre: <br><br>
                                 <ul>
                                 <li>Senderismo, trekking</li><br>
@@ -138,7 +140,7 @@
                             </figure>
                         </a>
                        <div class="card-content"> 
-                            <h3>Nuestros Itinerarios</h3> <br>
+                            <h2>Nuestros Itinerarios</h2> <br> <br>
                             <p>Ofrecen al viajero maravillosas jornadas: <br><br>
                                 <ul>
                                 <li>City tours</li><br>
@@ -149,74 +151,76 @@
                                </p>
                         </div>
                     </article>
-                </section>
+</section><br><br>
+
+
+
+<!-- Ajuste del codigo de Servicios2.html sacado de Git  -->              
+<section class="conversor">
+                    <div class="converter">
+                        <h2>Conversor de Divisas</h2>
+                        <input type="number" id="amount" placeholder="Cantidad" />
+                        <select id="fromCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="DOP">DOP</option>
+                            <option value="ARS">ARS</option>
+                            
+                           
+                        </select>
+                        <select id="toCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="DOP">DOP</option>
+                            <option value="ARS">ARS</option>
+                           
+                        </select>
+                        <button onclick="convertCurrency()">Convertir</button>
+                        <div class="result" id="result"></div>
+                    </div>
+                  </section><br><br><br><br>
+
+
             </main>
-<!--HASTA ACA MODIFICADO SERVICIOS2 para el TPO Y COMIENZA EL FORMULARIO -->
-
-<footer>     <div> <br>
-        <legend> <h3> INFORMACIÓN SOBRE NUESTROS ITINERARIOS PERSONALIZADOS</h3></legend>
-      <br><form method="get">
-            <label for="itinerarios"></label>
-             <select name="itinerarios">
-            <option> </option>
-            <option value= "Arte"> Arte/Historia</option>
-            <option value= "Natu"> Paisajes/ Reservas Naturales</option>
-            <option value= "festrel"> Festividades religiosas</option>
-            <option value= "festloc"> Fiestas locales/Musica</option>
-            <option value= "trek"> Trekking/Montañismo</option>
-            <option value= "cabal"> Cabalgatas/Deportes</option> 
-            <option value= "gastro"> Gastronomia/Alojamiento</option>Festividades</option>
-         </select>
-         <br><br>
-        <article> 
-            <label for="español"></label>
-            <input type="radio"
-                name="habla español"
-                value="idioma"/> EN ESPAÑOL 
-                  
-        <label for="otro idioma"> 
-        <input type="radio"
-        name="otros"
-        value="si"/> EN OTRO IDIOMA</label>
-               
-    <select name="otro idioma">
-    <option> </option>
-        <option value= "ingles"> inglés</option>
-        <option value= "ital"> italiano</option>
-        <option value= "fran"> francés</option>
-        <option value= "chino"> chino</option>        
-        <option value= "ruso"> ruso</option>
-        <option value= "#"> </option>
-        </select>
-        </article> <br> <br>
-        <article>
-            <label for="otros contactos"> CONTACTOS EN C.A.B.A.
-            <input type="radio"
-            name="otros contactos"
-            value="si"/> </label>
-                  
-        <select name="otros contactos"> 
-        <option> </option>
-            <option value= "Jujuy"> Casa de Jujuy. Av. Santa Fe 967</option>
-            <option value= "Salta"> Casa de Salta. Av. Pres. Roque Sáenz Peña 933</option> 
-            <option value= "Tucumán"> Casa de Tucumán. Suipacha 140</option>
-            <option value= "#"> </option>
-            </select>   
             
-        
-        
-        </article>
+   <footer>
+    <div id="footer">
+        <div class="pre" > 
+            <pre>
+                    UBICACIÓN
+                    ____________
+                    Av Gral. Paz 12206
+                    Buenos Aires, Argentina</pre> </div>
+                <div  class="pre">
+                    <pre >
+                        TELÉFONO
+                        ____________
+                        0800 -222- VIAJE</pre>
+                </div>
+                <div class="pre" >
+                    <pre>
+                        SEGUINOS
+                        ____________
+                        <span class="iEnLinea" >
+                            <a href="https://www.facebook.com/codoacodooficial/"> <img class="iconitosF" src="./imagenes/facebook.png" alt=""> </a>
+                            <a href="https://www.instagram.com/programacodoacodo/?hl=es"> <img class="iconitosF" src="./imagenes/instagram.png" alt=""> </a>
+                        </span> 
+                    </pre>
+                </div>
+                <div class="pre">
+                  <div class="logo-footer">
+                    <a href="index.html"class="aventuras" >
+                        <figure>
+                            <img class="logotipo"  src="./imagenes/logo_1.png" alt="logo compañia">
+                        </figure>
+                    </a>
+                </div>
+                </div>
+                
+               </footer>
 
-       </select>   
-      </div> <br>
-    <div>   
-        <button style="color:brown; background-color: bisque; text-decoration:bold; width:100px">Haga click para enviar</button>
-    </div>
-</form>
-   </footer>
-   <script defer src="index.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
-        
-        
+               <script defer src="index.js"></script>
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            </body>
+            </html>
+                    
