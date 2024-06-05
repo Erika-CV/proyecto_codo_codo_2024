@@ -240,22 +240,21 @@ display: inline-flex;
 }
 
 /*media query*/
-
 @media screen and (max-width: 52em){
 
     body{
         padding-top: 4em;
     }
 
-    .header{
+    header{
         height: 4em;
     }
 
     .logo img{
         height: 3em;
-                
     }
-   .texto b{
+
+    .texto b{
         display: flex;
         justify-content: center;
     }
@@ -263,6 +262,7 @@ display: inline-flex;
     .imgcarousel{
         height: 400px;
     }
+
     .nav-menu{
         flex-direction: column;
         background-color: #ccd5ae;
@@ -280,11 +280,11 @@ display: inline-flex;
     }
 
     .nav-enlace:hover{
-        background:none;
+        background: none;
         transition: none;
-        color:#dda15e;
-        
+        color: #dda15e;
     }
+
     .nav-menu-item:hover{
         transform: none;   
     }
@@ -298,36 +298,56 @@ display: inline-flex;
         left: 0%;
     }
 
-    #container{
-        width: 80% !important;
-
-    }
-
-
-    #footer{
-        display:block;
-        
-    }
-    .pre{
-        width:100%;
-        text-align: center;
-    }
     .textoEig{
-        display:block;
-    
+        display: block;
     }
- 
+
     .texto{
         text-align: justify;
         width: 100%;
+        margin-inline: 2vh;  /* Ajuste de margen para móviles */
     }
+
     .img-texto{
-        display: flex;
-        justify-content: center;
-        width: 340px;
+        display: block;
+        width: 100%;
+        max-width: 340px;
+        margin: auto;
         border-radius: 15%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
     }
+
+    .cardsFila{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pre{
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer{
+        display: block;
+        padding: 20px;  /* Añadir padding para mejor ajuste en móviles */
+    }
+
+    .iEnLinea{
+        display: block;
+        text-align: center;
+    }
+
+    .whatsapp{
+        width: 70px;
+        height: 70px;
+    }
+
+    .whatsapp a {
+        width: 70px;
+        height: 70px;
+    }
+
+
     
 
 }
