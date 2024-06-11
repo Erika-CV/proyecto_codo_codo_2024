@@ -294,10 +294,13 @@ display: inline-flex;
         padding-left: 9em;
     }
 
-    .nav-menu_visible{
+    .nav-menu_visible {
         left: 0%;
+        position: absolute;
+        z-index: 1000; /* Un valor alto para asegurar que esté sobre todo lo demás */
     }
-
+    
+    
     .textoEig{
         display: block;
     }
