@@ -152,8 +152,7 @@ header {
 }
 /* footer*/
 .logo-footer img {
-    height:6em;
-    margin-right: 1em;
+    height:5em;
     cursor: pointer;
     transition: all(0.3s);
 }
@@ -252,7 +251,7 @@ display: inline-flex;
     }
 
     .logo img{
-        height: 3em;
+        height: 4em;
     }
 
     .texto b{
@@ -260,6 +259,9 @@ display: inline-flex;
         justify-content: center;
     }
     
+    .carousel{
+        width: 92%;
+    }
     .imgcarousel{
         height: 400px;
     }
@@ -268,13 +270,13 @@ display: inline-flex;
         flex-direction: column;
         background-color: #ccd5ae;
         position: fixed;
+        left: 0px;
         top: 60px;
         width: 100%;
         padding: 20px 0px;
         left: 100%;
         transition: left 0.3s;
     }
-
     .nav-menu-item{
         margin-top: 10px;
         margin-bottom: 10px;
@@ -341,16 +343,7 @@ display: inline-flex;
         text-align: center;
     }
 
-    .whatsapp{
-        width: 70px;
-        height: 70px;
-    }
-
-    .whatsapp a {
-        width: 70px;
-        height: 70px;
-    }
-
+  
 
     
 
