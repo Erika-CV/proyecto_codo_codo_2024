@@ -25,6 +25,8 @@ header {
     
 }
 
+
+
 .logo{
     display:flex;
     align-items: center;
@@ -87,9 +89,8 @@ header {
     width: 80%;
     display: flex;
     justify-content: center;
-
+    
 }
-
 .carousel{
 
     margin-top: 1.7%;
@@ -99,7 +100,7 @@ header {
     text-align: center;
     display: block;
     margin-inline: 25vh;
-
+    
 }
 
 .img-texto{
@@ -107,6 +108,7 @@ header {
     border-radius: 15%;
     margin-left: 2vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    
 }
 
 
@@ -168,9 +170,8 @@ header {
    color: #CCD5AE;
    font-size: 20px;
    font-weight: bold;
-   margin-left: 3vh;
-   margin-right: 10vh;
-
+   margin-left: 2vh;
+   
 }
 #footer{
     background-color: #606c38;
