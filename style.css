@@ -7,7 +7,7 @@ body{
     width: 100%;
     font-family: "Raleway";
     padding: 5em 0 0;
-    background-color: #ffffff;
+    background-color: #FEFAE0;
 }
 /*nav bar*/
 header {
@@ -121,7 +121,7 @@ header {
  font-size: 25px;
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  text-align: center;
- color: #586822;
+ color: #606c38;
  
 }
 
